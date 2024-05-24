@@ -1,0 +1,39 @@
+## Broute Force Sol (TLE)
+
+class Solution {
+public:
+    int maxProfit(vector<int>& arr) {
+        int min = arr[0] , profit = 0;
+        for(int i = 1 ; i < arr.size(); i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+            else{
+                if(arr[i] - min > profit){
+                    profit = arr[i] - min;
+                }
+            }
+        }
+        return profit;
+    }
+};
+
+## Optimized Sol simple and Intutive Sol - https://www.youtube.com/watch?v=n7ypc2ukATQ
+
+class Solution {
+public:
+    int maxProfit(vector<int>& arr) {
+        int min = arr[0] , profit = 0;
+        for(int i = 1 ; i < arr.size(); i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+            else{
+                if(arr[i] - min > profit){
+                    profit = arr[i] - min;
+                }
+            }
+        }
+        return profit;
+    }
+};
