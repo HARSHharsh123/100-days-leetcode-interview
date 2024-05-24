@@ -14,7 +14,7 @@ public:
     }
 };
 
-## Another Two Pointer Approach (but we have to use pair and so on)
+## Another Two Pointer Approach (but we have to use pair and so on) -> https://www.youtube.com/watch?v=weENywNKxVA
 
 class Solution {
 public:
